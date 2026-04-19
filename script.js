@@ -41,9 +41,10 @@ const obliczzysk = document.querySelector(".obliczzysk")
 obliczzysk.addEventListener("click", function(){
     const przychód = parseInt(document.querySelector(".przychód").value)
 const koszt = parseInt(document.querySelector(".koszt").value)
+    const podatek = 0.12 * przychód
 const wynikzysku = document.querySelector(".wynikzysku")
 const obliczzysk = document.querySelector(".obliczzysk")
-const wynik = przychód - koszt
+const wynik = (przychód - podatek - koszt)
 wynikzysku.textContent = "Zysk " + wynik
 })
 localStorage.setItem("user", 40)
