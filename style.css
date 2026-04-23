@@ -27,3 +27,38 @@ body {
     width: 60%;
     margin: 0 auto;
     }}
+
+
+    .zmiana {
+        animation: zmiana .5s linear
+    }
+
+    @keyframes zmiana {
+        from{opacity: 0.3;}
+        to{opacity: 1;}
+    }
+
+    .container2 {
+        background: rgb(148, 136, 136);
+        color: white;
+        width:400px;
+        height:400px;
+        justify-content: right;
+        position: absolute;
+        top:230px;
+        left:800px;
+    }
+
+    .animacja1{
+    animation: animacja1 5s linear infinite;
+    }
+    @keyframes animacja1 {
+        from{transform: translateY(0)}
+        to{transform: translateY(-50px)}
+    }
+
+    .inputy {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
